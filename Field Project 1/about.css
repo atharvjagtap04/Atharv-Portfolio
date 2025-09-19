@@ -1,0 +1,116 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Navigation Bar */
+header {
+    background-color: #333;
+    padding: 15px 0;
+}
+
+header h1 {
+    color: #fff;
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+}
+
+.nav-links {
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links li a:hover {
+    color: #00b4d8;
+}
+
+/* Mobile Menu Icon */
+.mobile-menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-menu-icon span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+}
+
+/* About Section */
+.about-content {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.about-image {
+    max-width: 100%;
+    width: 40%;
+    margin-right: 20px;
+}
+.reviewer-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+.about-text {
+    width: 60%;
+}
+
+.mission-vision, .testimonials, .team {
+    margin: 40px 0;
+}
+
+.team {
+    display: flex;
+    justify-content: space-around;
+}
+
+.team-member {
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer a {
+    color: #00b4d8;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

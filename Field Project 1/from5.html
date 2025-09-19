@@ -1,0 +1,131 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Travel Booking</title>
+    <style>
+        section#booking {
+            background-color: #f0f0f0;
+            padding: 50px 20px;
+        }
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        form input, form select, form button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        form button {
+            background-color: #0284a8;
+            color: white;
+            font-size: 1.2em;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+            margin: 0;
+            padding: 0;
+        }
+
+        section#booking {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 50px 20px;
+            border-radius: 10px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            max-width: 700px;
+            margin: 40px auto;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+            font-family: 'Verdana', sans-serif;
+            margin-bottom: 30px;
+            font-size: 2.2em;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        form input, form select, form button {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+            font-size: 1em;
+            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+
+        form input:hover, form select:hover {
+            border-color: #0284a8;
+            box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        form button {
+            background: linear-gradient(90deg, #0284a8, #00d4ff);
+            color: white;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+
+        form button:hover {
+            background: linear-gradient(90deg, #00b4d8, #0077b6);
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #222;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: 50px;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <section id="booking">
+        <b> <h2 style="text-align: center;"> Book Your Trip</h2> </b>
+        <form action="book.php" method="post">
+            <input type="text" name="name" placeholder="Enter Your Name" required>
+            <input type="number" name="number" placeholder="Enter Your mobile Number" required>           
+            <input type="email" name="email" placeholder="Enter Your Email" >
+            <select name="boarding" required>
+                <option value="">Select Boarding</option>
+                <option value="Deccan">Deccan Office</option>
+                <option value="Wakadewadi">Wakadewadi</option>
+                <option value="Nashik Phata">Nashik Phata</option>
+                <option value="Bhosari">Bhosari</option>             
+            </select>
+            <select name="destination" required>
+                <option value="">Select Destination</option>
+                <option value="Himalayas">Kerala Highlights</option>
+                <option value="Shimala"> Adventure of Ladakh</option>
+                <option value="Varanasi">Unforgettable Himachal Pradesh </option>
+            </select>
+            <input type="date" name="date" required>
+            <a href="booknow5.html"><button type="submit">Book Now</button> </a>
+        </form>
+    </section>
+    <footer>
+        &copy; 2024 Travel Booking. All Rights Reserved.
+    </footer>
+    
+</body>
+</html>

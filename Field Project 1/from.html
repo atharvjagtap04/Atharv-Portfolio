@@ -1,0 +1,63 @@
+<?php
+// Check if error exists in URL
+$error = $_GET['error'] ?? '';
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Book Now</title>
+  <style>
+    form {
+      display: flex;
+      flex-direction: column;
+      width: 300px;
+      margin: auto;
+    }
+    input, select, button {
+      margin: 10px 0;
+      padding: 8px;
+    }
+    .error {
+      color: red;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<?php if ($error): ?>
+  <p class="error"><?php echo htmlspecialchars($error); ?></p>
+<?php endif; ?>
+
+<form action="book.php" method="post">
+  <input type="text" name="name" placeholder="Enter Your Name" required>
+
+  <!-- 10 digit number -->
+  <input type="text" name="number" placeholder="Enter Your Mobile Number"
+         pattern="[0-9]{10}" title="Enter exactly 10 digits" required>
+
+  <!-- Valid email format -->
+  <input type="email" name="email" placeholder="Enter Your Email" required>
+
+  <select name="boarding" required>
+    <option value="">Select Boarding</option>
+    <option value="Deccan">Deccan Office</option>
+    <option value="Wakadewadi">Wakadewadi</option>
+    <option value="Nashik Phata">Nashik Phata</option>
+    <option value="Bhosari">Bhosari</option>             
+  </select>
+
+  <select name="destination" required>
+    <option value="">Select Destination</option>
+    <option value="Himalayas">Himalayas, India</option>
+    <option value="Shimala">Shimala, India</option>
+    <option value="Varanasi">Varanasi, India</option>
+  </select>
+
+  <input type="date" name="date" required>
+  <button type="submit">Book Now</button>
+</form>
+
+</body>
+</html>

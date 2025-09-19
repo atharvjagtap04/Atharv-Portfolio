@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Attractive Book Now Button</title>
+    <style>
+        .book-now-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 8px;
+            font-style: normal;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: white;
+            background-color: #e63a3a;
+            border-radius: 50px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .book-now-btn:hover {
+            background-color: #ff3e44;
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+            transform: translateY(-3px);
+        }
+
+        .book-now-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 300%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.2);
+            transition: all 0.4s ease;
+            transform: skewX(-45deg);
+        }
+
+        .book-now-btn:hover::before {
+            left: 100%;
+        }
+    </style>
+</head>
+<body>
+<center>
+<a href="#" class="book-now-btn">Book Now</a>
+</center>
+</body>
+</html>

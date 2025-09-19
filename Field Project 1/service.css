@@ -1,0 +1,128 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url(back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.container1 {
+height:10px;
+}
+
+.services-list{
+    height: 2cm;
+}
+
+/* Header Styles */
+header {
+    background-color: #333; /* Dark background for the header */
+    padding: 20px 0;
+}
+
+h1 {
+    color: #fff; /* White text for the site title */
+    margin: 0;
+    text-align: left;
+}
+
+/* Navigation Styles */
+nav {
+    display: flex;
+    justify-content: right; /* Center the nav items */
+}
+
+nav ul {
+    list-style: none; /* Remove bullet points from list */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    float: right;
+}
+
+nav ul li {
+    margin: 0 15px; /* Space between nav items */
+}
+
+nav a {
+    color: #fff; /* White text for nav links */
+    text-decoration: none; /* Remove underline */
+    padding: 10px 15px; /* Padding around links */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+}
+
+/* Hover Effects */
+nav a:hover {
+    background-color: #555; /* Darker background on hover */
+    color: #ffcc00; /* Change text color on hover */
+    border-radius: 5px; /* Rounded corners on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Stack nav items vertically on small screens */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Adjust spacing for stacked items */
+    }
+}
+.destinations-section, .services-section {
+    padding: 20px;
+    background: #f4f4f4;
+}
+
+.destination-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: calc(33.333% - 20px); /* Three cards in a row */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.card h3 {
+    margin: 10px 0;
+}
+
+.card p {
+    padding: 0 10px;
+}
+
+.book-now-btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.flip-horizontal {
+    transform: scaleX(-1); /* Flips the icon horizontally */
+}
+.abc{
+    color: #ffffff;
+}

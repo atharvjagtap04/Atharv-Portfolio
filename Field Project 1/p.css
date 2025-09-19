@@ -1,0 +1,420 @@
+/* Smooth scroll for better navigation */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+    }
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+/* Add a colorful gradient background */
+body {
+    /* background: linear-gradient(to right, #ff7e5f, #feb47b); */
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+}
+
+/* Adding hover effect on navigation menu */
+nav ul li a:hover {
+    color: #feb47b; /* Changes to a light coral color */
+    transition: color 0.3s ease-in-out;
+}
+
+/* Section Backgrounds */
+section#home {
+    /* background: linear-gradient(to right, rgba(167, 220, 229, 0.8), rgba(118, 196, 252, 0.8)), url('nature.jpeg'); */
+    background-image: url(travel.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* background-attachment: fixed; */
+    color: #fff;
+    height: 540px;
+    text-align: center;
+    padding-top: 120px;
+}
+ 
+ /* #home {
+    background-image:url('img.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+} */
+
+#home h2 {
+    font-size: 3em;
+    margin: 0;
+}
+
+#home p {
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+section {
+    padding: 20px 0;
+}
+.h1{
+    text-align: center;
+    color: #000000;
+    border-bottom: 2px solid #3a3737; /* Red underline for a bold accent */
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    font-size: 26px;
+}
+
+.bk{
+    /* font-family: 'Brush Script MT', cursive; */
+    font-family: cursive;
+    letter-spacing: 0px;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 30px;
+    text-align: left;
+    color: #000;
+    font-weight: 500;
+}
+
+.Popular{
+    font-size: 30px;
+    color: #2d2727; /* Dark blue-gray for readability */
+    text-align: center;
+    margin: 10px 0;
+    line-height: 1.6;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    
+}
+
+/* Button animations */
+.book-now-btn {
+    background-color: #ff7e5f;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease;
+}
+
+.book-now-btn:hover {
+    background-color: #feb47b;
+    transform: scale(1.05); /* Slight increase in size */
+}
+
+
+.destination-cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.card {
+    background: #fff;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.card h3 {
+    margin: 15px 0;
+}
+
+section#destinations {
+    background-color: #f5f5f5; /* Soft background for readability */
+}
+
+.d{
+    background-image: url(kerala.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+/* Gradient Background for Exclusive Tours section */
+
+/* section#destinations:nth-of-type(2) {
+     background: linear-gradient(120deg, #7a6d87 0%, #2f4154 100%); 
+} */
+
+/* Services section hover effect */
+#services ul li:hover {
+    background-color: #feb47b; /* Warm coral on hover */
+    color: #fff; /* Text turns white */
+}
+
+/* Adding a slight animation to cards */
+.card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Lift effect */
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+}
+
+#services {
+    background: linear-gradient(135deg, #b29b9c 0%, #d6c7c3 100%);
+    padding: 50px 0;
+    text-align: center;
+}
+
+#services h2 {
+    font-size: 36px;
+    color: #072b45;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+#services h2:hover{
+    color: #616464; /* Bright blue on hover for interaction */
+    text-decoration: underline;
+    transform: scale(1.02); /* Slight zoom effect on hover */
+    transition: color 0.3s ease-in-out;
+}
+
+#services ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#services ul li {
+    font-size: 22px;
+    color: #89500f;
+    font-weight:bolder;
+    background-color: #ffffff;
+    margin: 15px auto;
+    padding: 15px 25px;
+    width: fit-content;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background-color 0.3s ease
+}
+
+#services ul li:hover{
+    transform: scale(1.02); /* Slight zoom effect on hover */
+    transition: transform 0.3s ease-in-out;
+
+}
+
+/* Reviews and Ratings */
+
+.ratings-section {
+    padding: 50px 0;
+    background-color: #ffffff;
+    text-align: center;
+    /* background-image: url(night.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;*/
+} 
+
+/* Ratings Section Background */
+.ratings-section {
+    /* background: linear-gradient(to bottom right, #ff7e5f, #feb47b); */
+    background: linear-gradient(to right, rgba(162, 98, 81, 0.8), rgba(254,180,123,0.8));
+ 
+}
+
+.rating-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.reviewer-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+.ratings-section h2 {
+    color: #ff7e5f;
+    margin-bottom: 20px;
+}
+
+.rating-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    margin: 20px;
+    padding: 20px;
+    width: 250px;
+}
+
+.rating-card:hover{
+    transform: scale(1.02); /* Slight zoom effect on hover */
+    transition: transform 0.3s ease-in-out;
+}
+
+.rating-stars {
+    color: #feb47b;
+    font-size: 1.5em;
+}
+
+.review-text {
+    font-size: 1.1em;
+    margin-top: 10px;
+    color: #333;
+}
+
+.review-author {
+    margin-top: 15px;
+    color: #666;
+    font-style: italic;
+}
+
+/* Styling for the contact section */
+
+.c{
+    background-image: url(back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.h {
+    color: #0b735e; /* Aqua green for a vibrant, modern look */
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #3a3737; /* Red underline for a bold accent */
+    padding-bottom: 8px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.p {
+    font-size: 18px;
+    color: #5b0505; /* Dark blue-gray for readability */
+    text-align: center;
+    margin: 10px 0;
+    line-height: 1.6;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+    /* Email and Phone styling */
+.p1 {
+    color: #1b77a5; /* Bold red for the email and phone to make them noticeable */
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    text-size-adjust:1opx ;
+     }
+     .p1:hover {
+    color: #202526; /* Bright blue on hover for interaction */
+    text-decoration: underline;
+    transition: color 0.3s ease-in-out;
+}
+/* Container styling */
+.container1 {
+    background-color: #ffffff; /* Light gray background for contrast */
+    padding: 20px;
+    margin: 0 auto;
+    width: 70%; 
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15); /* Subtle shadow for depth */
+}
+
+/* Add hover effect to the container */
+.container1:hover {
+    transform: scale(1.02); /* Slight zoom effect on hover */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Responsive design for smaller screens */
+
+@media (max-width: 600px) {
+    .h{
+        font-size: 22px;
+    }
+
+    .p {
+        font-size: 16px;
+    }
+
+    .container1 {
+        width: 90%;
+    }
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+/* Footer style with gradient */
+footer {
+    background: linear-gradient(135deg, #333 0%, #555 100%);
+}
+
+@media only screen and (max-width:768px) {
+    [class*="col-"] {
+        width: 100%;
+    }
+}
